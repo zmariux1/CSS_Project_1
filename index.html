@@ -3,63 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lurni</title>
+  <title>Document</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   
   <section class="page">
     <div class="leftSide">
       <h3 class="logo">
-        <img class="logoImg" src="table-lamp.png">
+        <img class="logoImg" src="/table-lamp.png" alt="Logo Lurni">
         Lurni
-    </h3>
+      </h3>
       <div class="positionForm">
         
-        <form action="" class="form">
+        <form id="form" class="form">
           <h1 class="formTitle">Get in touch</h1>
-          <input 
-          type="text" 
-          id="name" class="inputs"
-          name="name" 
-          placeholder="Enter your name" 
-          autocomplete="off" 
-          pattern=".{2,}" 
-          required
-          >
-          <input 
-          type="email" 
-          id="email" class="inputs"
-          name="email" 
-          placeholder="Enter your email" 
-          autocomplete="off" 
-          required
-          >
-
-          <textarea 
-          id="comments" class="inputs"
-          name="comments" 
-          rows="4" cols="50"
-          placeholder="How can we help you?"
-          autocomplete="off" 
-          minlength="10"
-          maxlength="400"
-          required
-          ></textarea>
-
+          <div class="input-control">
+            <input 
+            type="text" 
+            id="name"  class="inputs"
+            name="name" 
+            placeholder="Enter your name" 
+            autocomplete="off" 
+            pattern=".{2,}" 
+            >
+            <div class="error"></div>
+        </div>
+          <div class="input-control">
+            <input 
+            type="email" 
+            id="email" class="inputs"
+            name="email" 
+            placeholder="Enter your email" 
+            autocomplete="off" 
+            >
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <textarea 
+            id="comments" class="inputs"
+            name="comments" 
+            rows="4" cols="50"
+            placeholder="How can we help you?"
+            autocomplete="off" 
+            minlength="10"
+            maxlength="400"
+            ></textarea>
+            <div class="error"></div>
+          </div>
           <button type="submit" class="sendBtn">SEND</button>
         </form>
+      
       </div>
     </div>
     <div class="rightSide">
-      <img class="backgroundImg" src="backgroundImg.jpg" alt="">
+      <img class="backgroundImg" src="/backgroundImg.jpg" alt="">
     </div>
   </section>
 
 
   <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- jquary  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
 
-  <script src="script.js"></script>
+  <script src="/script.js"></script>
 </body>
 </html>
