@@ -1,6 +1,7 @@
 body {
   box-sizing: border-box;
   font-family: 'Alegreya Sans', sans-serif;
+  background: rgba(238,238,240,255);
 }
 
 body, h1, h2, h3, h4, h5, h6, p, a, span, div, ul, ol, li {
@@ -45,12 +46,14 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, div, ul, ol, li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background: white;
 }
 .rightSide {
-  background: rgba(238,238,240,255);
-  background-image: url('backgroundImg.jpg');
-  background-position: bottom center;
-  background-repeat: no-repeat;
+  display: flex;
+  justify-self: center;
+  align-items: end;
+  
+
 }
 
 .form {
