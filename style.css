@@ -48,7 +48,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, div, ul, ol, li {
 }
 .rightSide {
   background: rgba(238,238,240,255);
-  background-image: url('/backgroundImg.jpg');
+  background-image: url('backgroundImg.jpg');
   background-position: bottom center;
   background-repeat: no-repeat;
 }
