@@ -27,7 +27,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, div, ul, ol, li {
 }
 
 .formTitle {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 900;
   text-transform: uppercase;
   /* text-align: ba; */
@@ -36,8 +36,9 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, div, ul, ol, li {
 
 .page{
   display: grid;
-  grid-template-rows: 1.8fr 1fr;
-  height: 100vh;
+  grid-template-rows: 2.2fr 1fr;
+  height: 120vh;
+  position: relative;
 }
 
 
@@ -46,8 +47,9 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, div, ul, ol, li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: rgba(245, 245, 245, 0.9);
   z-index: 2;
+  min-height: 104vh;
 }
 
 
@@ -56,7 +58,8 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, div, ul, ol, li {
   flex-direction: column;
   margin: 0 auto;
   gap: 10px;
-  width: 59%;
+  width: 81%;
+  margin-top: 50px;
 }
 
 
@@ -118,6 +121,9 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, div, ul, ol, li {
   align-items: end;
   overflow: hidden;
   z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .backgroundImg {
@@ -139,6 +145,39 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, div, ul, ol, li {
 
   .backgroundImg {
     width: 50vw;
+    margin-bottom: 30px;
   }
 
+  .rightSide {
+
+    position: static;
+    top: 0;
+    left: 0;
+  }
+}
+
+
+
+@media (min-width: 1300px) {
+  .page{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    height: 100vh;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 10px;
+    width: 83%;
+  }
+
+  .formTitle {
+    font-size: 3.3rem;
+  }
+
+  .backgroundImg {
+    width: 42vw;
+  }
 }
